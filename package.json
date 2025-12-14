@@ -14,6 +14,8 @@
     "@sanity/icons": "^3.7.0",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.92.0",
+    "@upstash/ratelimit": "^2.0.7",
+    "@upstash/redis": "^1.35.8",
     "framer-motion": "^12.18.1",
     "next": "15.3.3",
     "next-intl": "^3.26.5",

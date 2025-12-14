@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { client } from '@/lib/sanity';
 import { writeClient } from '@/lib/sanity.server';
+import { ratelimit } from '@/lib/ratelimit';
 
 export async function POST(request: Request) {
   if (!writeClient) {
@@ -11,6 +12,16 @@ export async function POST(request: Request) {
         warning: 'View tracking inactive: SANITY_API_TOKEN not configured.',
       },
       { status: 200 },
+    );
+  }
+
+  const ip = request.headers.get('x-forwarded-for') ?? '127.0.0.1';
+  const { success } = await ratelimit.limit(ip);
+  
+  if (!success) {
+    return NextResponse.json(
+      { error: 'Too many requests. Please try again later.' },
+      { status: 429 }
     );
   }
 

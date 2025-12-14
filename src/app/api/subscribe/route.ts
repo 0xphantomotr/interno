@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { ratelimit } from '@/lib/ratelimit';
 
 const BREVO_API_KEY = process.env.BREVO_API_KEY;
 const BREVO_LIST_ID = process.env.BREVO_LIST_ID;
@@ -7,6 +8,16 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request: NextRequest) {
   try {
+    const ip = request.headers.get('x-forwarded-for') ?? '127.0.0.1';
+    const { success } = await ratelimit.limit(ip);
+    
+    if (!success) {
+      return NextResponse.json(
+        { message: 'Ju lutem provoni përsëri më vonë.' },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
     const email = typeof body?.email === 'string' ? body.email.trim() : '';
 

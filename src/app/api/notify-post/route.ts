@@ -55,7 +55,7 @@ const getSecretFromRequest = (request: NextRequest) => {
   if (authHeader?.startsWith('Bearer ')) {
     return authHeader.slice(7);
   }
-  return request.nextUrl.searchParams.get('secret');
+  return null;
 };
 
 const resolveSlug = (value: IncomingPostPayload['slug']) => {
