@@ -1,0 +1,267 @@
+.footer {
+  background-color: #000;
+  padding: clamp(48px, 8vw, 60px) 0 30px;
+  border-top: 1px solid #222;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 5vw, 2.5rem);
+}
+
+/* Newsletter Section */
+.newsletterContainer {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.newsletterTitle {
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.newsletterText {
+  color: #ccc;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.newsletterForm {
+  margin-bottom: 20px;
+}
+
+.newsletterMessage {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #9fe2b0;
+}
+
+.newsletterError {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #ff8c8c;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .inputGroup {
+    flex-direction: row;
+  }
+}
+
+.emailInput {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #333;
+  background-color: #111;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.emailInput:focus {
+  border-color: #555;
+}
+
+.submitButton {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 14px 24px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #eee;
+}
+
+/* Footer Grid Layout */
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 640px) {
+  .footerGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.categoriesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.categoryColumns {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px 48px;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .categoryColumns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+/* Footer Logo Section */
+.footerLogo {
+  margin-bottom: 20px;
+}
+
+.logoLink {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.logoTagline {
+  color: #ccc;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Link Columns */
+.linkColumn,
+.contactSection {
+  margin-bottom: 20px;
+}
+
+.columnTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 8px;
+}
+
+.footerLinkFallback {
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.footerLink {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.footerLink:hover {
+  color: #fff;
+}
+
+/* Address */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.address {
+  font-style: normal;
+  color: #ccc;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.address p {
+  margin: 0 0 8px 0;
+}
+
+.socialLinks {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.socialLink {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.socialLink:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Footer Bottom */
+.footerBottom {
+  text-align: center;
+  color: #999;
+  font-size: 0.875rem;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+}
+
+@media (max-width: 640px) {
+  .newsletterContainer {
+    margin-bottom: 50px;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerGrid {
+    gap: 28px;
+  }
+
+  .footerBottom {
+    font-size: 0.8rem;
+  }
+}

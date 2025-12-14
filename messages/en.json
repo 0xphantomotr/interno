@@ -1,0 +1,94 @@
+{
+  "Header": {
+    "menuButtonLabel": "Menu",
+    "subscribe": "Subscribe",
+    "closeMenuLabel": "Close menu",
+    "subscribeModalTitle": "Subscribe to INTERNO",
+    "closeSubscribeLabel": "Close subscription modal",
+    "subscribeModalSubtitle": "Get weekly updates with the best stories on architecture, design and inspiring spaces.",
+    "errors": {
+      "emptyEmail": "Enter your email address.",
+      "invalidEmail": "Please enter a valid email address.",
+      "serverMessage": "We couldn't save your subscription. Please try again later.",
+      "unknown": "Something went wrong. Please try again."
+    },
+    "emailPlaceholder": "Your email address",
+    "emailAriaLabel": "Email address",
+    "submitting": "Sending…",
+    "submit": "Send",
+    "successMessage": "Thank you! Please confirm your subscription from your inbox.",
+    "privacyNotice": "By subscribing you agree to our privacy policies.",
+    "localeSwitcherLabel": "Switch language",
+    "localeOptionSq": "Albanian",
+    "localeOptionEn": "English"
+  },
+  "Search": {
+    "fetchError": "No results found. Please try again.",
+    "placeholder": "Search articles...",
+    "ariaLabel": "Search articles",
+    "clear": "Clear search",
+    "tooShort": "Type at least 2 characters to search.",
+    "loading": "Searching…",
+    "noMatches": "No articles found for \"{query}\".",
+    "noImage": "No image"
+  },
+  "Footer": {
+    "newsletterTitle": "Become part of INTERNO",
+    "newsletterDescription": "Weekly stories, design, trends and spaces that speak",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "tagline": "A magazine dedicated to design, art and living",
+    "navigationTitle": "Navigate",
+    "links": {
+      "fallback": "Categories coming soon"
+    },
+    "contactTitle": "Contact",
+    "copyright": "© {year} Interno. All rights reserved.",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "tiktok": "TikTok",
+      "email": "Email"
+    }
+  },
+  "Home": {
+    "heroFallbackTitle": "Architecture that inspires every day",
+    "heroFallbackDescription": "Our editorial collection delivers fresh stories and ideas about the spaces around us.",
+    "latestTitle": "Latest",
+    "mostReadTitle": "Most read",
+    "aboutImageAlt": "About Interno Magazine",
+    "aboutTitle": "About INTERNO Magazine",
+    "aboutDescription": "<paragraph><bold>INTERNO</bold> is a magazine that speaks the language of style in all its forms: from architecture and interior design to modern ways of living. It was born from a desire to bring inspiration and fresh ideas to those who see their space as a reflection of life and personality.</paragraph><paragraph>On every page, <bold>INTERNO</bold> blends aesthetics with function, tradition with innovation, turning design into an experience.</paragraph><paragraph>Readers discover inspiring projects, timeless styles, and emerging trends that elevate the art of living.</paragraph><paragraph>With a contemporary vision and a refined sense of aesthetics, <bold>INTERNO</bold> shares stories, ideas, and insights that make design tangible and ever-evolving.</paragraph>"
+  },
+  "Articles": {
+    "breadcrumb": "Interno Magazine",
+    "title": "All articles",
+    "subtitle": "Explore every curated story on architecture, design, and inspiring spaces.",
+    "sectionTitle": "Full archive",
+    "sectionSubtitle": "Sorted by latest, with quick access to every category.",
+    "countBadge": "{count, number} articles",
+    "emptyState": "No articles have been published yet."
+  },
+  "Category": {
+    "empty": "No articles found in this category yet.",
+    "subcategoryNavLabel": "Subcategories"
+  },
+  "Common": {
+    "categoryFallback": "Category",
+    "viewsCount": "{count, number} reads",
+    "readArticleAria": "Read the article {title}",
+    "openArticleAria": "Open the article {title}",
+    "readArticleCta": "Read article →",
+    "readMoreCta": "Read more →",
+    "readArticleAction": "Read article",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "noImage": "No image",
+    "noCategory": "No category",
+    "anonymousAuthor": "Anonymous",
+    "authorImageAlt": "{name} profile photo",
+    "byAuthor": "By {name}",
+    "postImageAlt": "Post image",
+    "untitledPost": "Untitled post"
+  }
+}

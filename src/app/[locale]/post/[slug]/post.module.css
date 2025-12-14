@@ -1,0 +1,245 @@
+.article {
+  max-width: 920px;
+  margin: clamp(40px, 8vw, 60px) auto clamp(80px, 11vw, 100px);
+  padding: 0 clamp(1rem, 4vw, 24px);
+  color: #1b1b1b;
+}
+
+.header {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2.4rem, 6vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin-bottom: 24px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: rgba(27, 27, 27, 0.65);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.authorImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.date {
+  font-style: normal;
+}
+
+.categories {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.categoryLink {
+  background-color: rgba(17, 17, 17, 0.06);
+  padding: 6px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.categoryLink:hover {
+  background-color: rgba(17, 17, 17, 0.12);
+  color: #000;
+}
+
+.mainImageOuter {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, calc(100vw - 64px));
+  margin: 60px 0;
+}
+
+.mainImageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #f5f6f8;
+}
+
+.mainImage {
+  object-fit: cover;
+}
+
+.content {
+  font-size: clamp(1.05rem, 3.3vw, 1.18rem);
+  line-height: 1.72;
+  letter-spacing: 0.015em;
+  position: relative;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  margin-top: 2.4em;
+  margin-bottom: 1.2em;
+  line-height: 1.2;
+}
+
+.content p {
+  margin-bottom: 1.1em;
+}
+
+.content > p:first-of-type {
+  position: relative;
+}
+
+.content > p:first-of-type::first-letter {
+  font-size: clamp(3.2rem, 7vw, 4.8rem);
+  line-height: 1;
+  float: left;
+  margin-right: 18px;
+  margin-top: 6px;
+  font-weight: 700;
+  color: #1b1b1b;
+  letter-spacing: -0.01em;
+}
+
+@supports (initial-letter: 3) {
+  .content > p:first-of-type::first-letter {
+    float: none;
+    margin: 0 18px 6px 0;
+    initial-letter: 3;
+  }
+}
+
+.content a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.content a:hover {
+  color: #222;
+  border-bottom-color: #222;
+}
+
+.content blockquote {
+  border-left: 4px solid #111;
+  padding-left: 24px;
+  margin: 2em 0;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: rgba(27, 27, 27, 0.8);
+}
+
+.content strong {
+  font-weight: 700;
+}
+
+.content em {
+  font-style: italic;
+}
+
+.contentImageContainer {
+  margin: 2.4em calc(-1 * clamp(1rem, 4vw, 24px));
+}
+
+.contentImage {
+  width: 100%;
+  height: auto;
+}
+
+.contentFigure {
+  margin: 2.6em auto;
+  text-align: center;
+}
+
+.contentFigureImage {
+  width: 100%;
+  height: auto;
+}
+
+.contentFigureCaption {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: rgba(27, 27, 27, 0.7);
+  line-height: 1.5;
+}
+
+.contentFigureAttribution {
+  display: block;
+  font-size: 0.78rem;
+  color: rgba(27, 27, 27, 0.55);
+  margin-top: 4px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .article {
+    margin: 40px auto 72px;
+    padding: 0 clamp(1rem, 5vw, 18px);
+  }
+
+  .mainImageOuter {
+    width: calc(100vw - 28px);
+    margin: 44px 0;
+  }
+
+  .content {
+    font-size: 1.08rem;
+  }
+
+  .contentImageContainer {
+    margin: 2em 0;
+  }
+
+  .contentFigure {
+    margin: 2.2em 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .meta {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    row-gap: 12px;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .categoryLink {
+    letter-spacing: 0.12em;
+    padding: 6px 12px;
+  }
+
+  .mainImageOuter {
+    width: calc(100vw - 20px);
+    margin: 34px 0;
+  }
+}

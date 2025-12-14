@@ -1,0 +1,94 @@
+{
+  "Header": {
+    "menuButtonLabel": "Menu",
+    "subscribe": "Abonohu",
+    "closeMenuLabel": "Mbyll menunë",
+    "subscribeModalTitle": "Abonohu në INTERNO",
+    "closeSubscribeLabel": "Mbyll dritaren e abonimit",
+    "subscribeModalSubtitle": "Merr njoftime javore me historitë më të mira rreth arkitekturës, dizajnit dhe hapësirave të frymëzuara.",
+    "errors": {
+      "emptyEmail": "Shkruani adresën tuaj email.",
+      "invalidEmail": "Ju lutem përdorni një adresë email të vlefshme.",
+      "serverMessage": "Nuk mundëm të ruajmë abonimin. Provoni përsëri më vonë.",
+      "unknown": "Diçka shkoi keq. Provoni përsëri."
+    },
+    "emailPlaceholder": "Adresa juaj email",
+    "emailAriaLabel": "Adresa email",
+    "submitting": "Duke u dërguar…",
+    "submit": "Dërgo",
+    "successMessage": "Faleminderit! Konfirmoni abonimin në email-in tuaj.",
+    "privacyNotice": "Duke u abonuar ju pranoni politikat tona të privatësisë.",
+    "localeSwitcherLabel": "Ndrysho gjuhën",
+    "localeOptionSq": "Shqip",
+    "localeOptionEn": "Anglisht"
+  },
+  "Search": {
+    "fetchError": "Nuk u gjetën rezultate. Provoni përsëri.",
+    "placeholder": "Kërko artikuj...",
+    "ariaLabel": "Kërko artikuj",
+    "clear": "Pastro kërkimin",
+    "tooShort": "Shkruaj të paktën 2 karaktere për të kërkuar.",
+    "loading": "Duke kërkuar…",
+    "noMatches": "Asnjë artikull nuk u gjet për \"{query}\".",
+    "noImage": "Pa imazh"
+  },
+  "Footer": {
+    "newsletterTitle": "Behu pjese e Interno",
+    "newsletterDescription": "Histori javore, trende, dizajni dhe hapësira që flasin.",
+    "emailPlaceholder": "Adresa juaj email",
+    "subscribe": "Abonohu",
+    "tagline": "Revistë e dedikuar ne dizajn, art dhe jetesë",
+    "navigationTitle": "Navigo",
+    "links": {
+      "fallback": "Kategoritë së shpejti"
+    },
+    "contactTitle": "Kontakto",
+    "copyright": "© {year} Interno. Të gjitha të drejtat e rezervuara.",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "tiktok": "TikTok",
+      "email": "Email"
+    }
+  },
+  "Home": {
+    "heroFallbackTitle": "Arkitektura që frymëzon çdo ditë",
+    "heroFallbackDescription": "Koleksioni ynë editorial sjell historitë dhe idetë më të reja për hapësirat që na rrethojnë.",
+    "latestTitle": "Më të fundit",
+    "mostReadTitle": "Më të lexuarat",
+    "aboutImageAlt": "Rreth Revistës Interno",
+    "aboutTitle": "Rreth Revistës INTERNO",
+    "aboutDescription": "<paragraph><bold>INTERNO</bold> është revista që flet për stilin në çdo formë të tij, nga arkitektura dhe interieri, te mënyra moderne e jetesës. Kjo revistë lindi nga dëshira për të sjellë frymëzim dhe ide të reja për ata që e shohin hapësirën si pasqyrë të jetës dhe personalitetit të tyre.</paragraph><paragraph>Në çdo faqe, <bold>INTERNO</bold> kombinon estetikën me funksionalitetin, traditën me risinë, dhe e shndërron dizajnin në përvojë.</paragraph><paragraph>Lexuesit zbulojnë projekte frymëzuese, stile që përcaktojnë kohën dhe trende që e çojnë artin e të jetuarit një hap më tej.</paragraph><paragraph>Me një qasje bashkëkohore dhe ndjeshmëri estetike, <bold>INTERNO</bold> sjell histori, ide dhe këshilla që e bëjnë dizajnin të prekshëm, të përditshëm dhe gjithmonë në zhvillim.</paragraph>"
+  },
+  "Articles": {
+    "breadcrumb": "Revista Interno",
+    "title": "Të gjitha artikujt",
+    "subtitle": "Hulumto të gjitha shkrimet tona të kuruara rreth arkitekturës, dizajnit dhe hapësirave që frymëzojnë.",
+    "sectionTitle": "Arkiva e plotë",
+    "sectionSubtitle": "Renditur sipas të fundit, me mundësinë për të zbritur në çdo kategori.",
+    "countBadge": "{count, number} artikuj",
+    "emptyState": "Asnjë artikull i publikuar ende."
+  },
+  "Category": {
+    "empty": "Asnjë artikull nuk u gjet në këtë kategori ende.",
+    "subcategoryNavLabel": "Nën-kategoritë"
+  },
+  "Common": {
+    "categoryFallback": "Kategori",
+    "viewsCount": "{count, number} lexime",
+    "readArticleAria": "Lexo artikullin {title}",
+    "openArticleAria": "Hap artikullin {title}",
+    "readArticleCta": "Lexo artikullin →",
+    "readMoreCta": "Lexo më shumë →",
+    "readArticleAction": "Lexo artikullin",
+    "viewAll": "Shiko të gjitha",
+    "learnMore": "Mëso më shumë",
+    "noImage": "Pa imazh",
+    "noCategory": "Pa kategori",
+    "anonymousAuthor": "Anonim",
+    "authorImageAlt": "Foto e autorit {name}",
+    "byAuthor": "Nga {name}",
+    "postImageAlt": "Imazh i artikullit",
+    "untitledPost": "Artikull pa titull"
+  }
+}
