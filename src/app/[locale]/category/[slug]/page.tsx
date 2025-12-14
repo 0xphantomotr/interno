@@ -43,7 +43,7 @@ const getCategoryData = cache(async ({slug, locale}: {slug: string; locale: stri
         "excerpt": ${localizedFieldProjection('excerpt')}
       }
   }`;
-  const category = await client.fetch(query, {slug, locale}, {cache: 'no-store'});
+  const category = await client.fetch(query, {slug, locale}, { next: { revalidate: 60 } });
   return category;
 });
 

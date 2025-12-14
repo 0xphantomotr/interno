@@ -49,7 +49,7 @@ async function getPost(slug: string, locale: string): Promise<Post | null> {
     "excerpt": ${localizedFieldProjection('excerpt')}
   }`;
   try {
-    const post = await client.fetch(query, {slug, locale}, {cache: 'no-store'});
+    const post = await client.fetch(query, {slug, locale}, { next: { revalidate: 60 } });
     return post;
   } catch (error) {
     console.error("Failed to fetch post:", error);

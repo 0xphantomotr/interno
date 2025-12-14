@@ -28,7 +28,7 @@ async function getAllPosts(locale: string): Promise<Post[]> {
     const posts = await client.fetch(
       query,
       {locale},
-      {cache: 'no-store'}
+      {next: {revalidate: 60}}
     );
     return posts;
   } catch (error) {

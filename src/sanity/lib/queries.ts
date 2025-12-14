@@ -38,7 +38,7 @@ export async function getAllCategories(localeInput: string = DEFAULT_LOCALE): Pr
     const categories: Category[] = await client.fetch(
       query,
       {locale},
-      {cache: 'no-store'}
+      { next: { revalidate: 60 } }
     );
     return categories.map((category) => {
       const normalizedSubcategories = category.subcategories

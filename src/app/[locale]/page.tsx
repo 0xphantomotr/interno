@@ -53,7 +53,7 @@ async function getFeaturedPost(locale: string): Promise<Post | null> {
     const post = await client.fetch(
       query,
       {locale},
-      {cache: 'no-store'}
+      {next: {revalidate: 60}}
     );
     return post ?? null;
   } catch (error) {
@@ -89,7 +89,7 @@ async function getLatestPosts(locale: string): Promise<Post[]> {
     const posts = await client.fetch(
       query,
       {locale},
-      {cache: 'no-store'}
+      {next: {revalidate: 60}}
     );
     return posts;
   } catch (error) {
@@ -124,7 +124,7 @@ async function getMostReadPosts(locale: string): Promise<Post[]> {
     const posts = await client.fetch(
       query,
       {locale},
-      {cache: 'no-store'}
+      {next: {revalidate: 60}}
     );
     return posts;
   } catch (error) {

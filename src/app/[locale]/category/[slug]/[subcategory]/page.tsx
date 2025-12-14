@@ -61,7 +61,7 @@ const getSubcategoryData = cache(async ({
       }
   }`;
 
-  return client.fetch(query, {categorySlug, subcategorySlug, locale}, {cache: 'no-store'});
+  return client.fetch(query, {categorySlug, subcategorySlug, locale}, {next: {revalidate: 60}});
 });
 
 export async function generateStaticParams() {
